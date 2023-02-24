@@ -1,9 +1,9 @@
 def readyNumber():
     try:
-        valor= int(input("Digite um número"))
+        valor= int(input("Please type a number: "))
         return valor
     except ValueError:
-        print("O valor digitado não é um número, digite valor correto:")
+        print("Value typed is not a number, please try a number")
         return readyNumber()
     
-print(F'Valor digitado foi {readyNumber()}')
+print(F'Value is {readyNumber()}')
